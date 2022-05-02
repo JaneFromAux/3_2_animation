@@ -1,0 +1,59 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div {
+    height: 50px;
+    width: 50px;
+    margin: 25px;
+    animation-name: jumpy;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+
+}
+
+.lime {
+    background-color: lime;
+}
+
+.blue {
+    background-color: blue;
+    animation-delay: 200ms;
+}
+
+.yellow {
+    background-color: yellow;
+    animation-delay: 400ms;
+}
+
+.crimson {
+    background-color: crimson;
+    animation-delay: 600ms
+}
+
+.purple {
+    background-color: purple;
+    animation-delay: 800ms
+}
+
+@keyframes jumpy {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(70px);
+    }
+}
